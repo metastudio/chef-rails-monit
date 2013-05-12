@@ -1,1 +1,1 @@
-name 'chef-monit'
+name 'chef-rails-monit'
