@@ -1,9 +1,9 @@
 require 'chefspec'
 
-describe 'chef-rails-monit::default' do
-  let(:chef_run) { ChefSpec::ChefRunner.new.converge 'chef-rails-monit::default' }
+describe 'chef-rails-monitoring::default' do
+  let(:chef_run) { ChefSpec::ChefRunner.new.converge 'chef-rails-monitoring::default' }
 
   it 'includes monit' do
-    expect(chef_run).to include_recipe 'chef-rails-monit::monit'
+    expect(chef_run).to include_recipe 'chef-rails-monitoring::monit'
   end
 end

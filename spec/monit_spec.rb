@@ -1,7 +1,7 @@
 require 'chefspec'
 
-describe 'chef-rails-monit::monit' do
-  let(:chef_run) { ChefSpec::ChefRunner.new.converge 'chef-rails-monit::monit' }
+describe 'chef-rails-monitoring::monit' do
+  let(:chef_run) { ChefSpec::ChefRunner.new.converge 'chef-rails-monitoring::monit' }
 
   it 'installs monit' do
     expect(chef_run).to install_package 'monit'
