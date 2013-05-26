@@ -7,4 +7,4 @@ set httpd port 2812 and
     allow admin:monit      # require user 'admin' with password 'monit'
     allow @monit           # allow users of group 'monit' to connect (rw)
 
-include /etc/monit/conf.d/*
+include /etc/monit/conf.d/*.conf
