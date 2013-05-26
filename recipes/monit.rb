@@ -1,4 +1,5 @@
-package "postfix"
+include_recipe 'postfix::default'
+
 package "monit"
 
 template "/etc/monit/monitrc" do

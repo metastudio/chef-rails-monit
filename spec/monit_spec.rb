@@ -13,7 +13,7 @@ describe 'chef-rails-monitoring::monit' do
   end
 
   it 'installs postfix' do
-    expect(converge).to install_package 'postfix'
+    expect(converge).to include_recipe 'postfix::default'
   end
 
   it 'includes conf.d' do
