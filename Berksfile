@@ -1,3 +1,1 @@
-site :opscode
-
-cookbook 'postfix'
+metadata
