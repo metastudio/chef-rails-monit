@@ -190,4 +190,5 @@ DEPENDENCIES
   berkshelf
   chefspec
   foodcritic
+  minitest-chef-handler
   rake
